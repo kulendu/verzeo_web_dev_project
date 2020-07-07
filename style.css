@@ -1,0 +1,51 @@
+body{
+    background-image: url(storeImages/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.body-h1{
+    padding-top: 20%;
+    color:#fff;
+    text-align: center;
+}
+.scroll-img{
+    height: 70px;
+    width: 70px;
+    margin-left: 48%;
+    margin-top: 20%;
+}
+
+/* Carousel styling */
+.carousel{
+    background-color: #e4e3e3;
+    margin-top: 70px;
+    padding: 50px 200px;
+    justify-items: center;
+}
+
+.carousel-img{
+    height: 600px;
+    width: 400px;
+}
+.c-slide{
+    padding: 50px 200px;
+}
+
+/* Responsive items  */
+@media (max-width:1028px){
+    .carousel{
+        padding: 20px 50px 30px 50px;
+        margin-top: 400px;
+    }
+    .c-slide{
+        padding:20px ;
+        margin-top: 50px;
+    }
+    .body-h1{
+        padding-top: 50%;
+    }
+    .scroll-img{
+        margin-top: 300px;
+    }
+}
