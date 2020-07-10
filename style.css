@@ -101,6 +101,18 @@ body{
 .overflow-hidden { overflow: hidden; }
 
 
+/*Shopping items*/
+.items-box{
+    background-color: #f0ece3;
+    padding: 2%;
+    display: grid;
+    grid-template-areas: "a a a a";
+    grid-gap: 10px 20px;
+}
+
+
+
+
 /* Pricing */
 .pricing{
     color: white;
@@ -109,7 +121,15 @@ body{
 }
 .pricing-box{
     background-color: #f0ece3;
-    padding: 05% 20%;
+    padding: 05% 10%;
+}
+
+/* Membership */
+.button{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    right: 0px;
 }
 
 /* Responsive items  */
