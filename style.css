@@ -64,7 +64,9 @@ body{
     max-width: 960px;
 }
 
-
+.main{
+    background-color: #f0ece3;
+}
 
 
 /*
@@ -107,13 +109,16 @@ body{
 
 /*Shopping items*/
 .items-box{
-    background-color: #f0ece3;
+    
     padding: 2%;
     display: grid;
     grid-gap: 10px 20px;
 }
 
-
+/*Contact US */
+.contact {
+    padding: 0 20rem ;
+}
 
 
 /* Pricing */
@@ -123,7 +128,7 @@ body{
     padding: 10%;
 }
 .pricing-box{
-    background-color: #f0ece3;
+    
     padding: 05% 10%;
 }
 
@@ -171,6 +176,9 @@ body{
     .items-box{
         grid-template-areas: "a a" ;
     }
+    .contact {
+        padding: 0 10rem ;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -183,6 +191,9 @@ body{
     }
     .carousel{
         padding: 50px 50px;
+    }
+    .contact {
+        padding: 0 2rem ;
     }
 }
 
