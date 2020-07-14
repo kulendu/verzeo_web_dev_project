@@ -1,9 +1,12 @@
 body{
-    background-image: url(storeImages/bg.jpg);
+    background-image: url(storeImages/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: absolute;
 }
+
+
 .body-h1{
     padding-top: 20%;
     color:#EAEAEA;
@@ -17,7 +20,7 @@ body{
 }
 
 /* Carousel styling */
-.carousel{
+.carousel-main{
     background-color: #f0ece3;
     margin-top: 70px;
     padding: 50px 200px;
@@ -38,6 +41,7 @@ body{
     color: white;
     text-align: center;
     padding: 10%;
+    
 }
 .product-img{
     height: 150px;
@@ -59,9 +63,11 @@ body{
 .container {
     max-width: 960px;
 }
-#product-container{
-    background-image: linear-gradient(#E8CBC0,#636FA4);
+
+.main{
+    background-color: #f0ece3;
 }
+
 
 /*
  * Custom translucent site header
@@ -103,14 +109,16 @@ body{
 
 /*Shopping items*/
 .items-box{
-    background-color: #f0ece3;
+    
     padding: 2%;
     display: grid;
-    grid-template-areas: "a a a a";
     grid-gap: 10px 20px;
 }
 
-
+/*Contact US */
+.contact {
+    padding: 0 20rem ;
+}
 
 
 /* Pricing */
@@ -120,7 +128,7 @@ body{
     padding: 10%;
 }
 .pricing-box{
-    background-color: #f0ece3;
+    
     padding: 05% 10%;
 }
 
@@ -134,7 +142,7 @@ body{
 
 /* Responsive items  */
 @media (max-width:1028px){
-    .carousel{
+    .carousel-main{
         padding: 20px 50px 30px 50px;
         margin-top: 400px;
     }
@@ -151,6 +159,41 @@ body{
     .pricing-box{
         background-color: #f0ece3;
         padding: 05% 01%;
+    }
+    .items-box{
+        grid-template-areas: "a a a ";
+    }
+}
+
+
+@media screen and (min-width:770px){
+    .items-box{
+        grid-template-areas: "a a a a";
+    }
+}
+
+@media screen and (max-width:770px) {
+    .items-box{
+        grid-template-areas: "a a" ;
+    }
+    .contact {
+        padding: 0 10rem ;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .items-box{
+        grid-template-areas: "a " ;
+    }
+
+    .items-box .card{
+        height: 30rem;
+    }
+    .carousel{
+        padding: 50px 50px;
+    }
+    .contact {
+        padding: 0 2rem ;
     }
 }
 
